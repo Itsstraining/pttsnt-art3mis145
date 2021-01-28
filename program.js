@@ -14,7 +14,11 @@ function pttsnt(inp) {
 
 function main(input) {
   let inp = parseInt(input);
-  console.log(pttsnt(inp).join(" "));
+  if (inp == 0) {
+    return console.log(inp);
+  } else {
+    console.log(pttsnt(inp).join(" "));
+  }
 }
 
 module.exports = main;
